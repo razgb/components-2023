@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+/* MODAL COMPONENT */
+.modal {
+}
+
+.modal__content {
+}
+
+.modal__heading {
+}
+
+.modal__text {
+}
+
+.modal__signup {
+}
+
+.modal__form--input {
+}
+
+.modal__form--btn {
+}
+
+.modal__img--container {
+}
+
+.modal__img {
+}
