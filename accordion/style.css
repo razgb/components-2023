@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.accordion {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.accordion-item {
+  margin: 10px;
+}
+
+.accordion-button {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: #f1f1f1;
+}
+
+.accordion-content {
+  padding: 0 15px;
+
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: opacity 0.5s, max-height 0.5s, visibility 0.5s;
+}
+
+.accordion-content.active {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
