@@ -1,0 +1,61 @@
+.section-button {
+  width: 800px;
+  margin: 200px auto;
+}
+
+.custom-btn {
+  position: relative;
+
+  padding: 16px 32px;
+  border: 1px solid #ccc; /* Thin border */
+  margin-right: 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+/* Modern, distinct colors for each button */
+#btn1 {
+  background-color: #ff7e67;
+  color: #fff;
+} /* Coral */
+#btn2 {
+  background-color: #7ebcff;
+  color: #fff;
+} /* Sky Blue */
+#btn3 {
+  background-color: #ffeb7b;
+  color: #333;
+} /* Light Yellow */
+#btn4 {
+  background-color: #7cffcb;
+  color: #333;
+} /* Aqua Green */
+#btn5 {
+  background-color: #b67bff;
+  color: #fff;
+} /* Lavender */
+
+/* Hover effect */
+.custom-btn:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.tag {
+  display: none;
+  position: absolute;
+
+  top: -65%;
+  /* top: 0; */
+  left: 0;
+
+  width: 60px;
+  padding: 6px 12px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px 5px 5px 0;
+}
+
+.active {
+  display: block;
+}
