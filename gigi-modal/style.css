@@ -1,3 +1,5 @@
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -16,31 +18,58 @@ html {
 }
 
 .overlay {
-  display: none;
   position: absolute;
   content: "";
   width: 100vw;
   height: 100vh;
-  /* top: 0; */
-  /* left: 0; */
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 
-  z-index: 2;
+  z-index: 1;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 /* MODAL COMPONENT */
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 
-.modal {
+.section__gigi {
   padding: 9.6rem 3.2rem;
 }
 
+.hidden {
+  display: none;
+}
+
+.modal__icon {
+  position: absolute;
+  display: block;
+  content: "";
+  font-size: 3.6rem;
+
+  color: #fff;
+  top: 0.5rem;
+  right: 0;
+  right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal__icon:hover {
+  color: black;
+}
+
+.modal {
+  padding: 9.6rem 3.2rem;
+  z-index: 2;
+}
+
 .modal__container {
+  position: relative;
+
   font-family: "Playfair Display", serif;
   display: flex;
-  /* align-items: center; */
-  width: 70rem;
+
+  background-color: #fff;
+  width: 80rem;
   height: 33.75rem;
 
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -48,15 +77,14 @@ html {
 
 .modal__content {
   position: relative;
-  z-index: 1;
-  width: 35rem;
+  width: 40rem;
   padding: 3.2rem;
   text-align: center;
 }
 
 .modal__heading {
   font-size: 3.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .modal__text {
@@ -65,7 +93,7 @@ html {
 }
 
 .modal__text:last-of-type {
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .modal__text--discount {
@@ -78,16 +106,16 @@ html {
   gap: 1.6rem;
 }
 
-.modal__form--input {
+.modal__form-input {
   padding: 0.8rem;
 }
 
-.modal__form--input:focus,
-.modal__form--btn:focus {
+.modal__form-input:focus,
+.modal__form-btn:focus {
   outline: 1px solid black;
 }
 
-.modal__form--btn {
+.modal__form-btn {
   align-self: center;
   width: 12rem;
   padding: 0.8rem;
@@ -98,17 +126,17 @@ html {
   transition: all 0.2s;
 }
 
-.modal__form--btn:hover {
+.modal__form-btn:hover {
   background-color: black;
   color: white;
 }
 
-.modal__img--container {
-}
+/* .modal__img-container {
+} */
 
 .modal__img {
   /* YOU NEED SPECIFIC DIMENSIONS TO USE OBJECT-FIT:COVER */
-  width: 35rem;
+  width: 40rem;
   height: 33.75rem;
   object-fit: cover;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=;, initial-scale=1.0" />
     <title>Components</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- fancy font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,15 +14,20 @@
       rel="stylesheet"
     />
 
-    <script defer type="module" src="script.js"></script>
+    <script defer type="module" src="./script.js"></script>
   </head>
   <body>
     <div class="container">
       <!--  -->
 
-      <div class="overlay"></div>
-      <figure class="modal">
+      <div class="overlay hidden"></div>
+      <section class="section__gigi">
+        <button class="btn-gigi modal__form-btn">Open modal</button>
+      </section>
+
+      <figure class="modal hidden">
         <div class="modal__container">
+          <i class="modal__icon fi fi-rr-cross-small"></i>
           <div class="modal__content">
             <h3 class="modal__heading">Get the scoop</h3>
             <p class="modal__text">on new arrivals, exclusive offers.</p>
@@ -31,19 +36,19 @@
 
             <form class="modal__form">
               <input
-                class="modal__form--input"
+                class="modal__form-input"
                 type="text"
                 placeholder="Enter your email address"
                 required
               />
-              <button class="modal__form--btn">SUBMIT</button>
+              <button class="modal__form-btn">SUBMIT</button>
             </form>
           </div>
 
-          <div class="modal__img--container">
+          <div class="modal__img-container">
             <img
               class="modal__img"
-              src="images/modal-images/gigi.jpg"
+              src="../images/modal-images/gigi.jpg"
               alt="Photo of gigi hadid"
             />
           </div>
